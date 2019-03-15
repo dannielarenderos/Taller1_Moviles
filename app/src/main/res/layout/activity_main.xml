@@ -3,42 +3,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+android:gravity="center"
     android:orientation="horizontal"
-    android:padding="8dp"
     tools:context=".MainActivity">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
 
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Entran"/>
+            android:layout_height="match_parent"
+            android:text="Entran"
+            android:textSize="30sp" />
+
         <TextView
+            android:id="@+id/contador_entran_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:id="@+id/contador_entran_textview" />
+            android:textSize="30sp" />
+
         <Button
+            android:id="@+id/botonEntran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ADD"
-            android:id="@+id/botonEntran"/>
+            android:text="ADD" />
 
-        </LinearLayout>
+    </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+
+            >
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="30sp"
             android:text="Salen"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="30sp"
             android:text="0"
             android:id="@+id/contador_salen_textview" />
         <Button
